@@ -1,0 +1,96 @@
+settings:
+  default-cooldown: 3
+  clear-lines: 50
+  timezone: "America/Denver"
+
+filters:
+  block-links: true
+  blocked-words:
+    - "fuck"
+    - "shit"
+    - "bitch"
+    - "asshole"
+
+# Format based on the player's primary LuckPerms group.
+# Make sure the keys here exactly match your LuckPerms group names (e.g., default, donor, admin).
+group-formats:
+  default: "%luckperms_prefix%&7%player% &8» &f%message%"
+  tier1: "%luckperms_prefix%&f%player% &8» &f%message%"
+  tier2: "%luckperms_prefix%&f%player% &8» &f%message%"
+  tier3: "%luckperms_prefix%&f%player% &8» &f%message%"
+  tier4: "%luckperms_prefix%&f%player% &8» &f%message%"
+  helper: "%luckperms_prefix%&f%player% &8» &e%message%"
+  mod: "%luckperms_prefix%&f%player% &8» &e%message%"
+  admin: "%luckperms_prefix%&f%player% &8» &e%message%"
+  owner: "%luckperms_prefix%&f%player% &8» &e%message%"
+
+
+# Prefixes appended to the front of the message if the user is in a specific channel.
+channel-prefixes:
+  public: ""
+  trading: "&a[TRADE] "
+  donor: "&b[DONOR]"
+  staff: "&d[STAFF] "
+
+hover-text:
+  - "&9&l%player%'s Stats"
+  - ""
+  - "&7Rank: &f%capitalized_rank%"
+  - "&7Prison Rank: &f%prison_rank%"
+  - "&7Balance: &a%beareconomy_balance%"
+  - ""
+  - "&eClick to send a message!"
+
+messages:
+  prefix: "&9[BN] &7"
+  no-permission: "&7You do not have permission to use this command."
+  player-not-found: "&7Player not found."
+  cannot-message-self: "&7You cannot message or ignore yourself."
+
+  chat-locked: "&7Global chat is currently locked by an administrator."
+  chat-locked-broadcast: "&7Global chat has been &clocked."
+  chat-unlocked-broadcast: "&7Global chat has been &aunlocked."
+
+  slowmode-active: "&7Chat is in slowmode. Please wait &a%time%s &7before typing again."
+  slowmode-set: "&7Chat slowmode set to &e%time%s"
+  slowmode-disabled: "&7Chat slowmode has been &cdisabled"
+
+  channel-join: "&7You are now talking in the &e%channel% &7channel"
+  channel-denied: "&7You do not have access to the &e%channel% &7channel"
+
+  msg-format-to: "&8[&3Me &8-> &f%player%&8]: &7%message%"
+  msg-format-from: "&8[&3%player% &8-> &fMe&8]: &7%message%"
+  no-reply: "&7You have nobody to reply to."
+
+  ignore-added: "&7You are now ignoring &e%player%"
+  ignore-removed: "&7You are no longer ignoring &e%player%"
+  ignore-error: "&7You cannot message this player"
+
+  filter-link: "&7Links are not allowed in chat!"
+  filter-word: "&cYour message contained blacklisted words."
+
+  mail-sent: "&7Mail successfully sent to &e%player%"
+  mail-received: "&eYou have new mail! Type &b/mail read &eto view it."
+  mail-cleared: "&7Your mailbox has been cleared."
+  mail-empty: "&7Your mailbox is currently empty."
+  mail-format: "&8[&e%date%&8] &7%sender% &8» &f%message%"
+  socialspy-enabled: "&aSocialSpy is now &2ENABLED&a."
+  socialspy-disabled: "&cSocialSpy is now &4DISABLED&c."
+  socialspy-format: "&8[&cSpy&8] &7%sender% &8➔ &7%target%&f: %message%"
+  cannot-mail-ignored: "&cYou cannot send mail to a player who has ignored you."
+
+  mail-help-header: "&e=== BearChat Mail ==="
+  mail-help-read: "&b/mail read [page] &7- Read your inbox"
+  mail-help-send: "&b/mail send <player> <msg> &7- Send a letter"
+  mail-help-clear: "&b/mail clear [player] &7- Delete mail from a player"
+
+  mail-cleared-user: "&aSuccessfully cleared &e%count% &amessage(s) from &e%player%&a."
+  mail-empty-user: "&cYou don't have any mail from &7%player%&c."
+  mail-mailbox-header: "&e--- Your Mailbox &7(Page %page%/%max%) &e---"
+  mail-login-notification: "&aYou have &e%count% &aunread mail message(s)! Type &b/mail read &ato view them."
+
+  usage-mail-send: "&cUsage: /mail send <player> <message>"
+  cannot-mail-self: "&cYou cannot send mail to yourself!"
+  chat-same-message: "&cPlease do not repeat the same message!"
+  chat-default-cooldown: "&cPlease slow down! You can chat again in &e%time%s&c."
+  chat-slowmode-active: "&cAdmin Slowmode is active. Please wait &e%time%s &cbefore chatting."
