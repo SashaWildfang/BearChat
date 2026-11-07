@@ -1,0 +1,38 @@
+name: BearChat
+version: '${version}'
+main: com.sasha.bearchat.BearChat
+api-version: '1.20'
+depend: [PlaceholderAPI]
+description: Bear Nation Custom Chat Core
+
+commands:
+  clearchat:
+    description: Clears the global chat.
+    aliases: [cc]
+    permission: bn.bearchat.admin
+  msg:
+    description: Send a private message.
+    aliases: [tell, message, m, w, whisper]
+  reply:
+    description: Reply to the last message.
+    aliases: [r]
+  ignore:
+    description: Ignore a player.
+  ignorelist:
+    description: Manage ignored players.
+  channel:
+    description: Switch chat channels.
+    aliases: [chat]
+  staffchat:
+    description: Toggle or send to staff chat.
+    aliases: [sc]
+    permission: bn.channel.staff
+  chatadmin:
+    description: Manage chat settings.
+    aliases: [lockchat, unlockchat]
+    permission: bn.bearchat.admin
+  mail:
+    description: Send and receive offline mail
+  socialspy:
+    description: Spy on private messages
+    permission: bn.bearchat.socialspy
